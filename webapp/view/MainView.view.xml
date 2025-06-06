@@ -25,45 +25,8 @@
                         <Input id="idInputCard" value="" visible="false"/>                    
                     </f:content>
                 </f:SimpleForm>
+            <core:Fragment fragmentName="com.acn.training.activity5.fragment.ShoppingCart" type="XML" />
 
-                <Table id="idTableSCart" inset="false">
-                    <headerToolbar>
-                        <OverflowToolbar id="idOFT">
-                            <content>
-                                <Title id="idTableTitleSCart" text="{i18n>shoppingCartLbl}"/>
-                                <ToolbarSpacer id="idTSpacer"/>
-                                <Button id="idBtnAddItems" icon="sap-icon://cart-4" tooltip="Add to Cart" press="onAddItem"/>
-                            </content>
-                        </OverflowToolbar>
-                    </headerToolbar>
-                    <columns>
-                        <Column id="idCol1">
-                            <Text id="idColText1" text="{i18n>itemLbl}" />
-                        </Column>
-                        <Column id="idCol2">
-                            <Text id="idColText2" text="{i18n>quantityLbl}" />
-                        </Column>
-                        <Column id="idCol3">
-                            <Text id="idColText3" text="{i18n>priceLbl}" />
-                        </Column>
-                    </columns>
-                    <items>
-                        <ColumnListItem id="idColListItem1" vAlign="Middle">
-                            <cells>
-                                <Text id="idText1" text="{i18n>itemNameTxt1}" />
-                                <Text id="idText2" text="{i18n>itemQuantityTxt1}" />
-                                <Text id="idText3" text="{i18n>itemPriceTxt1}" />
-                            </cells>
-                        </ColumnListItem>
-                        <ColumnListItem id="idColListItem2" vAlign="Middle">
-                            <cells>
-                                <Text id="idText4" text="{i18n>itemNameTxt2}" />
-                                <Text id="idText5" text="{i18n>itemQuantityTxt2}" />
-                                <Text id="idText6" text="{i18n>itemPriceTxt2}" />
-                            </cells>
-                        </ColumnListItem>
-                    </items>
-                </Table>
             </VBox>
 
                 <footer>
